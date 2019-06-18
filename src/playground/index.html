@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/vendor/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../styles/vendor/grid.css">
+    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Nova+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merienda:700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/queries.css">
+    <meta charset="UTF-8">
+    <title>Jakub Kulaszewicz</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <ul class="main-nav">
+                    <li><a href="#aboutMe" class="js--scroll-to-aboutMe">About me</a></li>
+                    <li><a href="#skills" class="js--scroll-to-skills">Skills</a></li>
+                    <li><a href="#portfolio" class="js--scroll-to-portfolio">Portfolio</a></li>
+                    <li><a href="https://github.com/kulaszewicz" target="_blank">Github</a></li>
+                    <li><a href="#contact" class="js--scroll-to-contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero-text-box">
+            <img src="resources/astronaut-helmet.png" class="icon-logo">
+            <h1>Jakub Kulaszewicz</h1>
+            <h2>A wannabe web developer</h2>
+        </div>
+    </header>
+
+    <section class="section-aboutMe js--section-aboutMe" id="aboutMe">
+        <div class="row">
+            <h2>About me<i class="fas fa-graduation-cap"></i></h2>
+            <p class="long-copy">
+                Hello, my name is Jakub. I'm a Computer Science student (currently on a 4th semester of engineering degree). I've been coding and solving problems for quite some time. Come and have a look at my work!
+            </p>
+
+        </div>
+    </section>
+
+    <section class="section-skills js--section-skills" id="skills">
+        <div class="row">
+            <h2>My skills</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-2 box">
+
+                <h3><i class="icon ion-md-cafe icon-big"></i>Programing</h3>
+                <ul class="skill-nav">
+                    <li>-------------</li>
+                    <li>Javascript ES5/6 &mdash; Advanced</li>
+                    <li>React &mdash; Basics</li>
+                    <li>Node.js &mdash; Basics</li>
+                    <li>JQuery &mdash; Basics</li>
+                    <li>-------------</li>
+                    <li>C/C++ &mdash; Medium</li>
+                    <li>Assembly x86 &mdash; Basics</li>
+                    <li>Java &mdash; Basics</li>
+                    <li>-------------</li>
+                    <li>Not programing languages:</li>
+                    <li>HTML &mdash; Medium</li>
+                    <li>CSS3 &mdash; Medium</li>
+                    <li>SASS &mdash; Basics</li>
+                    <li>-------------</li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2 box">
+
+                <h3><i class="icon ion-md-color-palette icon-big"></i>Graphic design</h3>
+                <ul class="skill-nav">
+                    <li>-------------</li>
+                    <li>Blender &mdash; Medium</li>
+                    <li>Adobe Photoshop &mdash; Medium</li>
+                    <li>-------------</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section-portfolio js--section-portfolio" id="portfolio">
+        <div class="row">
+            <h1>Portfolio</h1>
+            <h3>My Recent Projects</h3>
+            <div class="row">
+                <div class="col span-1-of-3 box">
+                    <a href="projects/kamir/index.html" target="_blank"> <h4>Kamir</h4></a>
+                    <img src="resources/kamir.png" class="project-img">
+                    <h5 class="completed">Completed</h5>
+                    <p class="project-text">Kamir is a website project for a jewellery shop that I've worked in. It was build in a similar way as this page
+                    using grid.css standard.</p>
+                </div>
+                <div class="col span-1-of-3 box">
+                    <a href="projects/arcanea/index.html" target="_blank"><h4>Arcanea Board Game</h4></a>
+                    <img src="resources/arcanea.png" class="project-img">
+                    <h5 class="in-progress">In-progress</h5>
+                    <p class="project-text">This ver works only on Chrome! <br>Arcanea is my proudest project so far even known it's far from deploying. It's a web board game where the board
+                    made of hex shaped fields is always randomly generated based on algorithm I wrote myself in JS. At current state it is possible to dynamically create boards and move from start to the end.</p>
+                </div>
+                <div class="col span-1-of-3 box">
+                    <a href="https://github.com/kulaszewicz/react-course" target="_blank"><h4>Indecision App</h4></a>
+                    <img src="resources/ind.jpg" class="project-img">
+                    <h5 class="completed">Completed</h5>
+                    <p class="project-text">Indecision is a React app that I made with help of Andrew Mead course. It's a dynamic form where we can create a list of activities and let computer choose what we should do. Thanks to that I learned basics of react.</p>
+                </div>
+            </div>
+            <div class="row git">
+                <h3>There are also more projects that I have worked on</h3>
+                <h4>You can check them out by clicking the icon below <i class="icon ion-md-arrow-round-down icon-big"></i></h4>
+                <a href="https://github.com/kulaszewicz" target="_blank"><img src="resources/git.png" class="git-img"></a>
+            </div>
+        </div>
+    </section>
+    <section class="section-contact .js--section-contact" id="contact">
+        <div class="row">
+            <h1>Contact</h1>
+            <h2>You can find me here </h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-2 box">
+                <img src="resources/ja.jpg" class="me-img">
+            </div>
+            <div class="col span-1-of-2 box">
+               <h5>Click<i class="fas fa-level-down-alt"></i></h5>
+                <ul class="skill-nav">
+                    <li>-------------</li>
+                    <li><a href="mailto:s17838@pjwstk.edu.pl?subject=Masz ładne Portfolio"><i class="fas fa-envelope icon-big"></i>E-Mail</li>
+                    <li><a href="https://www.facebook.com/jakub.kulaszewicz" target="_blank"><i class="icon ion-logo-facebook icon-big"></i>Facebook</a></li>
+                    <li><a href="https://discord.gg/kPHrEd" target="_blank"><i class="fab fa-discord icon-big"></i>Discord</a></li>
+                    <li>-------------</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/jakub.kulaszewicz" target="_blank"><i class="fab fa-facebook-f"></i></i></i></a></li>
+                    <li><a href="https://github.com/kulaszewicz" target="_blank"><i class="fab fa-github-alt"></i></i></a></li>
+                    <li><a href="https://discord.gg/kPHrEd" target="_blank"><i class="fab fa-discord"></i></i></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                Web page created by Jakub Kulaszewicz. Github big icon designed by Agata Kuczmińska.
+            </p>
+        </div>
+    </footer>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="js/vendor/jquery.waypoints.min.js"></script>
+<script src="js/script.js"></script>
+</html>

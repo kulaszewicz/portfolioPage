@@ -1,0 +1,16 @@
+@import "base/settings";
+@import "base/base";
+@import "base/queries";
+@import "vendor/grid.css";
+
+@import url('https://fonts.googleapis.com/css?family=Merienda:700|Nova+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mali&display=swap');
+
+@import "components/header";
+@import "components/jkprojects";
+@import "components/aboutme";
+@import "components/skills";
+@import "components/portfolio";
+@import "components/github";
+@import "components/contact";
+@import "components/mobileportfolio";
