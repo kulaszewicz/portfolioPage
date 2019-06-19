@@ -1,5 +1,16 @@
-.skill-nav{
+.skill-nav {
   text-align: center;
   list-style: none;
   margin-top: 25px;
+}
+
+.skill-nav li {
+  text-shadow: 1px 1px 1px #000000;
+}
+
+@media only screen and (max-width: 420px) {
+
+  .skill-nav {
+    margin-top: 5px;
+  }
 }

@@ -18,7 +18,7 @@ const Portfolio = () => (
                         </p>
                 </div>
                 <div className="col span-1-of-3 box">
-                    <a href="projects/arcanea/index.html" target="_blank"><h4>Arcanea Board Game</h4></a>
+                    <a href="https://github.com/kulaszewicz/ArcaneaBoardGame" target="_blank"><h4>Arcanea Board Game</h4></a>
                     <img src={arcaneaImg} alt={"arcaneaImg"} className="project-img"/>
                         <h5 className="in-progress">In-progress</h5>
                         <p className="project-text">Arcanea is a web board game where the board

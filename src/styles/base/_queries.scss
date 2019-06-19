@@ -42,7 +42,9 @@
 }
 
 @media only screen and (max-width: 680px) {
-
+  .main-nav {
+    display: none;
+  }
 
   .icon-logo {
     top: 5%;
@@ -53,3 +55,20 @@
 
   }
 }
+
+@media only screen and (max-width: 420px) {
+
+  h1 {
+    font-size: 210%;
+  }
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  .skill-nav {
+    margin-top: 5px;
+  }
+
+}
+

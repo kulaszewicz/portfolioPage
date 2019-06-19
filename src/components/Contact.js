@@ -20,7 +20,7 @@ const Contact = () => (
                 <h5>Click<FontAwesomeIcon icon={faLevelDownAlt} className="icon-big icon-arrow" /></h5>
                 <ul className="skill-nav">
                     <li>-------------</li>
-                    <li><a href="mailto:s17838@pjwstk.edu.pl?subject=Masz ładne Portfolio">
+                    <li><a href="mailto:s17838@pjwstk.edu.pl">
                         <FontAwesomeIcon icon={faEnvelope} className="icon-big" />E-Mail</a></li>
                     <li><a href="https://www.facebook.com/jakub.kulaszewicz" target="_blank">
                         <FontAwesomeIcon icon={faFacebook} className="icon-big" />Facebook</a></li>
