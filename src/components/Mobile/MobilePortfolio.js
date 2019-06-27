@@ -5,7 +5,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import arrowTop from '../../assets/images/arrow-point-to-top.svg'
 import arrowBottom from '../../assets/images/arrow-point-to-bottom.svg'
 import kamirImg from '../../assets/images/kamir.png'
-import arcaneaImg from '../../assets/images/arcanea.png'
+import mappkaImg from '../../assets/images/mappka.png'
 import rewineImg from '../../assets/images/rewine.png'
 
 import SingleProject from './SingleProject'
@@ -57,8 +57,8 @@ export default class MobilePortfolio extends React.Component {
                                        />
                                    </Slide>
                                    <Slide index={1}>
-                                       <SingleProject title={'Arcanea Board Game'} img={arcaneaImg} projectState={'in-progress'} link={'https://github.com/kulaszewicz/ArcaneaBoardGame'}
-                                                      paragraph={'Arcanea is a web board game where the board made of hex shaped fields is always randomly generated based on algorithm I wrote myself in JS.'}
+                                       <SingleProject title={'Mappka'} img={mappkaImg} projectState={'completed'} link={'https://github.com/kulaszewicz/Mappka'}
+                                                      paragraph={'Mappka is a Hackathon Wizja Rozwoju 2019 project created in 24h which aim was to create new kind of city map, click image for details'}
                                        />
                                    </Slide>
                                    <Slide index={2}> <SingleProject
