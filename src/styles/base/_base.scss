@@ -28,6 +28,14 @@ button:disabled {
   cursor: default;
 }
 
+header {
+  opacity: 0;
+}
+.app-wrapper{
+  height: 100vh;
+  overflow: hidden;
+}
+
 /* ----------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ----------------------------------------------- */
@@ -140,4 +148,23 @@ a {
   line-height: 120%;
   vertical-align: middle;
   margin-top: -5px;
+}
+
+.showApp {
+  animation: fadeIn 2s;
+  -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+  -moz-animation-fill-mode: forwards;    /* FF 5+ */
+  -o-animation-fill-mode: forwards;      /* Not implemented yet */
+  -ms-animation-fill-mode: forwards;     /* IE 10+ */
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
