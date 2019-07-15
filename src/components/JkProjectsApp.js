@@ -81,67 +81,74 @@ export default class JkProjectsApp extends React.Component {
     render(){
             if (this.state.isMobilePhone === true) {
                 return (
-                    <header style={this.props.style}>
-                        <Stars/>
-                        <div className={'headerGradient'}>
-                            <CarouselProvider
-                                naturalSlideWidth={100}
-                                naturalSlideHeight={100}
-                                totalSlides={6}
-                                dragEnabled={false}
-                                className={'slider slider-mobile-prim'}
-                                touchEnabled={false}
-                            >
-                                <nav>
-                                    <div className="row">
-                                        <ul className="main-nav">
-                                            <li>
-                                                <Dot onClick={() => {this.handleCurrSlide(1)}} className={'nav-dot'} slide={1}>
-                                                    <a>About me</a>
-                                                </Dot>
-                                            </li>
-                                            <li>
-                                                <Dot onClick={() => {this.handleCurrSlide(2)}} className={'nav-dot'} slide={2}>
-                                                    <a>Skills</a>
-                                                </Dot>
-                                            </li>
-                                            <li>
-                                                <Dot onClick={() => {this.handleCurrSlide(3)}} className={'nav-dot'} slide={3}>
-                                                    <a>Portfolio</a>
-                                                </Dot>
-                                            </li>
-                                            <li>
-                                                <Dot onClick={() => {this.handleCurrSlide(4)}} className={'nav-dot'} slide={4}>
-                                                    <a>Github</a>
-                                                </Dot>
-                                            </li>
-                                            <li>
-                                                <Dot onClick={() => {this.handleCurrSlide(5)}} className={'nav-dot'} slide={5}>
-                                                    <a>Contact</a>
-                                                </Dot>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                                <Slider className={'slider slider-mobile-prim'}>
-                                    <Slide index={0}> <Header /> </Slide>
-                                    <Slide index={1}> <AboutMe /> </Slide>
-                                    <Slide index={2}> <MobileSkills /> </Slide>
-                                    <Slide index={3}> <MobilePortfolio /> </Slide>
-                                    <Slide index={4}> <Github /> </Slide>
-                                    <Slide index={5}> <Contact /> </Slide>
-                                </Slider>
+                    <div className={'app-wrapper'}>
+                        {this.state.isPageLoading && <LoadingScreen/>}
+                        <header id={'load-app'} style={this.props.style}>
+                            <div className={'background'}>
+                                <img onLoad={()=>{this.handleLoadingPage()}} src={backGroundImg} className={'background__image'}/>
+                                <div className="background__gradient">&nbsp;</div>
+                            </div>
+                            <Stars/>
+                            <div className={'headerGradient'}>
+                                <CarouselProvider
+                                    naturalSlideWidth={100}
+                                    naturalSlideHeight={100}
+                                    totalSlides={6}
+                                    dragEnabled={false}
+                                    className={'slider slider-mobile-prim'}
+                                    touchEnabled={false}
+                                >
+                                    <nav>
+                                        <div className="row">
+                                            <ul className="main-nav">
+                                                <li>
+                                                    <Dot onClick={() => {this.handleCurrSlide(1)}} className={'nav-dot'} slide={1}>
+                                                        <a>About me</a>
+                                                    </Dot>
+                                                </li>
+                                                <li>
+                                                    <Dot onClick={() => {this.handleCurrSlide(2)}} className={'nav-dot'} slide={2}>
+                                                        <a>Skills</a>
+                                                    </Dot>
+                                                </li>
+                                                <li>
+                                                    <Dot onClick={() => {this.handleCurrSlide(3)}} className={'nav-dot'} slide={3}>
+                                                        <a>Portfolio</a>
+                                                    </Dot>
+                                                </li>
+                                                <li>
+                                                    <Dot onClick={() => {this.handleCurrSlide(4)}} className={'nav-dot'} slide={4}>
+                                                        <a>Github</a>
+                                                    </Dot>
+                                                </li>
+                                                <li>
+                                                    <Dot onClick={() => {this.handleCurrSlide(5)}} className={'nav-dot'} slide={5}>
+                                                        <a>Contact</a>
+                                                    </Dot>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                    <Slider className={'slider slider-mobile-prim'}>
+                                        <Slide index={0}> <Header /> </Slide>
+                                        <Slide index={1}> <AboutMe /> </Slide>
+                                        <Slide index={2}> <MobileSkills /> </Slide>
+                                        <Slide index={3}> <MobilePortfolio /> </Slide>
+                                        <Slide index={4}> <Github /> </Slide>
+                                        <Slide index={5}> <Contact /> </Slide>
+                                    </Slider>
 
-                                {this.state.currSlide !== 0 && <ButtonBack
-                                                                onClick={this.handlePrevSlide}><img className={'arrow-left'} src={arrowLeft}/>
-                                                                </ButtonBack>}
-                                {this.state.currSlide !== 5 && <ButtonNext
-                                                                onClick={this.handleNextSlide}><img className={'arrow-right'} src={arrowRight}/>
-                                                                </ButtonNext>}
-                            </CarouselProvider>
+                                    {this.state.currSlide !== 0 && <ButtonBack
+                                                                    onClick={this.handlePrevSlide}><img className={'arrow-left'} src={arrowLeft}/>
+                                                                    </ButtonBack>}
+                                    {this.state.currSlide !== 5 && <ButtonNext
+                                                                    onClick={this.handleNextSlide}><img className={'arrow-right'} src={arrowRight}/>
+                                                                    </ButtonNext>}
+                                </CarouselProvider>
 
-                        </div>
-                    </header>
+                            </div>
+                        </header>
+                    </div>
                 )
             } else {
                 return (
@@ -212,7 +219,7 @@ export default class JkProjectsApp extends React.Component {
                                 </CarouselProvider>
 
                             </div>
-                        </header>}
+                        </header>
                     </div>
 
                 )
